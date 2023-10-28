@@ -1,0 +1,30 @@
+body {
+    font-family: 'Playpen Sans', cursive;
+}
+
+.title {
+    text-align: center;
+}
+
+.part {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    margin: 0 6rem;
+        
+}
+
+.picture {
+    width: 100%;
+}
+
+.intro {
+    border: 1px solid black;
+    font-size: 120%;
+    display: grid;
+    place-items: center;
+    margin: 15px 2rem;
+    padding: 0 2rem;
+    max-height: 40rem;
+    overflow: scroll;
+}
