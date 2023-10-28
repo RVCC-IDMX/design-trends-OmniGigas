@@ -1,0 +1,101 @@
+:root {
+  --attention: hsl(18, 100%, 50%);
+  --banner: hsl(100, 10%, 90%);
+  --wind: hsl(170, 60%, 45%);
+  --earth: hsl(40, 80%, 40%);
+  --lightning: hsl(320, 50%, 45%);
+  --nature: hsl(100, 40%, 35%);
+  --water: hsl(240, 60%, 40%);
+
+}
+
+body {
+  background-image: url("../image/sky.jpg");
+}
+
+.title {
+  text-align: center;
+  color: var(--attention);
+  font-family: 'Roboto Slab', serif;
+  font-size: 300%;
+  padding-top: 30px;
+  padding-bottom: 15px;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  font-family: 'Viga', sans-serif;
+  background-color: var(--banner);
+}
+
+.wind {
+  color: var(--wind);
+}
+
+.earth {
+  color: var(--earth);
+}
+
+.lightning {
+  color: var(--lightning);
+}
+
+.nature {
+  color: var(--nature);
+}
+
+.water {
+  color: var(--water);
+}
+
+ul li {
+  list-style: none;
+  flex-basis: 0;
+  
+}
+
+a {
+  color: orangered;
+}
+
+a:hover {
+  text-shadow: 2px 2px;
+}
+
+a:visited {
+  color: purple;
+}
+
+.picture {
+  display: block;
+  border: 5px solid rgb(82, 82, 250);
+  width: 50%;
+  height: 50%;
+  margin: 50px auto;
+}
+
+.description {
+  text-align: center;
+  color: darkred;
+}
+
+.story {
+  text-align: justify;
+  font-size: 20px;
+  font-weight: bold;
+  color: darkred;
+  background-color: paleturquoise;
+  border: 4px solid rgb(82, 82, 250);
+  margin: 25px auto;
+  padding: 15px;
+  height: 300px;
+  min-width: 300px;
+  overflow-y: auto;
+}
+
+.disclaimer {
+  color: var(--attention);
+}
