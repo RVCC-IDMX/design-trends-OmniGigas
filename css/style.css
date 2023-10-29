@@ -1,11 +1,8 @@
 :root {
   --attention: hsl(18, 100%, 50%);
   --banner: hsl(100, 10%, 90%);
-  --wind: hsl(170, 60%, 45%);
-  --earth: hsl(40, 80%, 40%);
-  --lightning: hsl(320, 50%, 45%);
-  --nature: hsl(100, 40%, 35%);
-  --water: hsl(240, 60%, 40%);
+  --darkred: hsl(0, 80%, 30%);
+  --darkblue: hsl(220, 80%, 40%);
 
 }
 
@@ -17,7 +14,7 @@ body {
   text-align: center;
   color: var(--attention);
   font-family: 'Roboto Slab', serif;
-  font-size: 300%;
+  font-size: 200%;
   padding-top: 30px;
   padding-bottom: 15px;
 }
@@ -29,26 +26,27 @@ body {
   gap: 1.5rem;
   font-family: 'Viga', sans-serif;
   background-color: var(--banner);
+  font-size: 50%;
 }
 
 .wind {
-  color: var(--wind);
+  color: hsl(170, 60%, 45%);
 }
 
 .earth {
-  color: var(--earth);
+  color: hsl(40, 80%, 40%);
 }
 
 .lightning {
-  color: var(--lightning);
+  color: hsl(320, 50%, 45%);
 }
 
 .nature {
-  color: var(--nature);
+  color: hsl(100, 40%, 35%);
 }
 
 .water {
-  color: var(--water);
+  color: hsl(240, 60%, 40%);
 }
 
 ul li {
@@ -57,45 +55,79 @@ ul li {
   
 }
 
-a {
-  color: orangered;
-}
-
-a:hover {
-  text-shadow: 2px 2px;
-}
-
-a:visited {
-  color: purple;
-}
 
 .picture {
   display: block;
-  border: 5px solid rgb(82, 82, 250);
+  border: 5px solid var(--darkblue);
   width: 50%;
   height: 50%;
-  margin: 50px auto;
-}
-
-.description {
-  text-align: center;
-  color: darkred;
+  margin: 20px auto;
 }
 
 .story {
   text-align: justify;
-  font-size: 20px;
+  font-size: 60%;
   font-weight: bold;
-  color: darkred;
-  background-color: paleturquoise;
-  border: 4px solid rgb(82, 82, 250);
-  margin: 25px auto;
+  color: var(--darkred);
+  background-color: hsl(190, 80%, 80%);
+  border: 4px solid var(--darkblue);
+  margin: 10px auto;
   padding: 15px;
   height: 300px;
   min-width: 300px;
   overflow-y: auto;
 }
 
+.description {
+  text-align: center;
+  
+}
+
 .disclaimer {
+  font-size: 50%;
   color: var(--attention);
+}
+
+/* media query starts here */
+
+@media all and (min-width: 600px) {
+  .title {
+    font-size: 250%;    
+  }
+
+  .menu {
+    gap: 1.5rem;
+    font-size: 80%;
+  }
+
+  .story {
+    font-size: 80%;
+    margin: 15px auto;
+    padding: 15px; 
+  }
+
+  .disclaimer {
+    font-size: 70%;
+  }
+}
+
+@media all and (min-width: 800px) {
+  .title {
+    font-size: 300%;    
+  }
+
+  .menu {
+    gap: 1.5rem;
+    font-size: 100%;
+  }
+
+  .story {
+    font-size: 100%;
+    margin: 25px auto;
+    padding: 15px; 
+  }
+
+  .disclaimer {
+    font-size: 100%;
+  }
 }
